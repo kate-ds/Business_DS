@@ -66,7 +66,7 @@ def predict():
 if __name__ == "__main__":
     print(("* Loading the model and Flask starting server..."
            "please wait until server has fully started"))
-    modelpath = "./models2/model.pkl"
-    user_transactions = load_transactions('Data2/transactions.csv')
+    modelpath = "app/models2/model.pkl"
+    user_transactions = load_transactions('app/Data2/transactions.csv')
     load_model(modelpath)
     app.run()
